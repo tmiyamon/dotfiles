@@ -661,8 +661,8 @@ let Grep_Skip_Files = '*.bak *~'
 " surround.vim
 "------------------------------------
 " s, ssで選択範囲を指定文字でくくる
-" nmap s <Plug>Ysurround
-" nmap ss <Plug>Yssurround
+nmap s <Plug>Ysurround
+nmap ss <Plug>Yssurround
 
 " "------------------------------------
 " " smartchr.vim
