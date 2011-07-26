@@ -637,12 +637,18 @@ let g:treeExplVertical=1
 "------------------------------------
 " NERD_commenter.vim
 "------------------------------------
+"デフォルトキーマッピングオフ
+let g:NERDCreateDefaultMappings = 0
 " コメントの間にスペースを空ける
 let NERDSpaceDelims = 1
 "<Leader>xでコメントをトグル(NERD_commenter.vim)
-map <Leader>x, c<space>
+"map <Leader>x, c<space>
 ""未対応ファイルタイプのエラーメッセージを表示しない
 let NERDShutUp=1
+
+nmap <Leader>/ <Plug>NERDCommenterToggle
+vmap <Leader>/ <Plug>NERDCommenterToggle
+
 
 " ------------------------------------
 " grep.vim
